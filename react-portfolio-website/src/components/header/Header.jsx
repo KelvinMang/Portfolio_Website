@@ -12,7 +12,7 @@ const Header = () => {
           Hello I'm
         </h5>
         <h1> Kelvin Mang </h1>
-        <h5 className='text-light'>Student</h5>
+        <h5 className='text-light'> Penultimate year MEng EEE with Management student at Imperial College London</h5>
         <CTA />
         <HeaderSocials />
 
