@@ -40,10 +40,10 @@ const About = () => {
             </div>
 
             <p>
-            An Electrical and Electronic Engineering with Management student with experiences in power supply/ software/ business case studies.
-            I participated in the Close the Deal International M&A Competition and was ranked the first runner up.
+            I am a penultimate year Electrical and Electronic Engineering with Management student with experiences in programming/ data analysis and circuit design .
+            I was ranked the first runner up in the Close the Deal International M&A Competition in 2022.
             I'm able to leverage my skills in power electronics to build a solar charging station.
-            I am eager to learn and currently finding internship or placement opportunities in Fintech.
+            I am eager to learn and currently finding internship or placement opportunities in Fintech industry.
             </p> 
 
             <a href='#contact' className='btn btn-primary'> Let's Talk </a>
