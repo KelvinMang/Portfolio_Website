@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.732b08ee.css",
-    "main.js": "/static/js/main.2a75dbfd.js",
-    "static/media/me.png": "/static/media/me.821ecddcb9953b46bf75.png",
+    "main.css": "/static/css/main.aef5ac3a.css",
+    "main.js": "/static/js/main.fa36757e.js",
+    "static/media/Kelvin-about.png": "/static/media/Kelvin-about.73da75f4a64e0c7c895c.png",
     "static/media/real_me.jpeg": "/static/media/real_me.b114004154b48a111430.jpeg",
-    "static/media/me-about.jpg": "/static/media/me-about.fb4452e7f286d3636ef9.jpg",
+    "static/media/Kelvin_me.png": "/static/media/Kelvin_me.a5541558e96ded34a87d.png",
     "static/media/portfolio5.png": "/static/media/portfolio5.a82ae9a163c1ac5e3a07.png",
     "static/media/Hao_Jian_Mang_Resume.pdf": "/static/media/Hao_Jian_Mang_Resume.6c8ccb67b60812979c6b.pdf",
     "static/media/portfolio2.jpg": "/static/media/portfolio2.ae187bc4e43ae6dbc263.jpg",
@@ -13,11 +13,11 @@
     "static/media/portfolio3.jpg": "/static/media/portfolio3.cbab42559fe73e73906f.jpg",
     "static/media/portfolio4.jpg": "/static/media/portfolio4.6bf60cbb8fe5f7d7af5d.jpg",
     "index.html": "/index.html",
-    "main.732b08ee.css.map": "/static/css/main.732b08ee.css.map",
-    "main.2a75dbfd.js.map": "/static/js/main.2a75dbfd.js.map"
+    "main.aef5ac3a.css.map": "/static/css/main.aef5ac3a.css.map",
+    "main.fa36757e.js.map": "/static/js/main.fa36757e.js.map"
   },
   "entrypoints": [
-    "static/css/main.732b08ee.css",
-    "static/js/main.2a75dbfd.js"
+    "static/css/main.aef5ac3a.css",
+    "static/js/main.fa36757e.js"
   ]
 }
