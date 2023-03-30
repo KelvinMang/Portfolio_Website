@@ -23,27 +23,24 @@ const About = () => {
               <article className='about__card'>
                 <FiAward className='about__icon'/>
                 <h5> Experience </h5>
-                <small> 3+ Years Coding </small>
+                <small> 3rd Year EEE with Management at Imperial College </small>
               </article>
 
               <article className='about__card'>
                 <FaUsers className='about__icon'/>
-                <h5> Clients </h5>
-                <small> 200+ Worldwide </small>
+                <h5> Interests </h5>
+                <small> Data Analytics and Investment </small>
               </article>
 
               <article className='about__card'>
                 <VscRootFolder className='about__icon'/>
-                <h5> Project </h5>
-                <small> 80+ Completed </small>
+                <h5> Skills </h5>
+                <small> 3 Years in Programming & Finance Competitions </small>
               </article>
             </div>
 
             <p>
-            I am a penultimate year Electrical and Electronic Engineering with Management student with experiences in programming/ data analysis and circuit design .
-            I was ranked the first runner up in the Close the Deal International M&A Competition in 2022.
-            I'm able to leverage my skills in power electronics to build a solar charging station.
-            I am eager to learn and currently finding internship or placement opportunities in Fintech industry.
+            I am a diligent penultimate-year student at Imperial College London, studying Electrical and Electronic Engineering with Management. With a strong background in programming, data analysis, and financial modeling, I am passionate about learning and growth. Currently, I am actively exploring opportunities within the dynamic FinTech industry.
             </p> 
 
             <a href='#contact' className='btn btn-primary'> Let's Talk </a>

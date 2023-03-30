@@ -9,84 +9,83 @@ const Experience = () => {
 
     <div className='container experience__container'>
       <div className='experience__frontend'>
-        <h3> Frontend Development</h3>
+        <h3> Software Development </h3>
         <div className='experience__content'>
           <article className='experience__details'>
             <HiBadgeCheck className='experience__details-icon'/>
             <div>
-              <h4> HTML </h4>
+              <h5> Python </h5>
               <small className='text-light'> Experienced </small>
             </div>
           </article>
           <article className='experience__details'>
             <HiBadgeCheck className='experience__details-icon'/>
             <div>
-              <h4> CSS </h4>
-              <small className='text-light'> Intermediate</small>
-            </div>
-          </article>
-          <article className='experience__details'>
-            <HiBadgeCheck className='experience__details-icon'/>
-            <div>
-              <h4> Flutter </h4>
+              <h5> Flutter </h5>
               <small className='text-light'> Experienced </small>
             </div>
           </article>
           <article className='experience__details'>
             <HiBadgeCheck className='experience__details-icon'/>
             <div>
-              <h4> JavaScript </h4>
+              <h5> C++ </h5>
               <small className='text-light'> Intermediate </small>
             </div>
           </article>
           <article className='experience__details'>
             <HiBadgeCheck className='experience__details-icon'/>
             <div>
-              <h4> React </h4>
+              <h5> React </h5>
+              <small className='text-light'> Intermediate </small>
+            </div>
+          </article>
+          <article className='experience__details'>
+            <HiBadgeCheck className='experience__details-icon_move'/>
+            <div>
+              <h5> Machine Learning </h5>
               <small className='text-light'> Experienced </small>
             </div>
-           
           </article>
         </div>
       </div>
       {/* END OF FRONTEND */}
 
       <div className='experience__backend'>
-      <h3> Backend Development</h3>
+      <h3> Financial Competencies </h3>
         <div className='experience__content'>
           <article className='experience__details'>
             <HiBadgeCheck className='experience__details-icon'/>
             <div>
-              <h4> Node JS </h4>
+              <h5> Modeling </h5>
               <small className='text-light'> Experienced </small>
             </div>
           </article>
           <article className='experience__details'>
             <HiBadgeCheck className='experience__details-icon'/>
             <div>
-              <h4> MongoDB </h4>
+              <h5> Fin. Analysis </h5>
               <small className='text-light'> Intermediate</small>
             </div>
           </article>
           <article className='experience__details'>
             <HiBadgeCheck className='experience__details-icon'/>
             <div>
-              <h4> PHP </h4>
+              <h5> Budgeting </h5>
               <small className='text-light'> Basic </small>
             </div>
           </article>
           <article className='experience__details'>
             <HiBadgeCheck className='experience__details-icon'/>
             <div>
-              <h4> MySQL </h4>
+              <h5> Inv. Analysis </h5>
               <small className='text-light'> Intermediate </small>
             </div>
           </article>
           <article className='experience__details'>
             <HiBadgeCheck className='experience__details-icon'/>
             <div>
-              <h4> Python </h4>
-              <small className='text-light'> Experienced </small>
+              <h5> Data Analysis </h5>
+              <small className='text-light'> Intermediate </small>
             </div>
           </article>
         </div>

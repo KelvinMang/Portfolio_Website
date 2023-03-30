@@ -33,12 +33,24 @@
 
 .experience__details {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .experience__details-icon {
-    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; 
     color: var(--color-primary);
+}
+.experience__details-icon_move {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; 
+    color: var(--color-primary);
+    margin-left: 4px;
 }
 
 /* ========================= MEDIA QUERIES (MEDIUM DEVICES) ========================== */
