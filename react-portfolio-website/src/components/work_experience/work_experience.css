@@ -1,0 +1,64 @@
+.container.work_experience__container {
+    width: 65%;
+    padding-bottom: 4rem;
+}
+
+.company_logo {
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.2rem solid var(--color-primary-variant);
+}
+
+.work_experience {
+    background: var(--color-bg-variant);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    user-select: none;
+}
+
+.job__details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company__role {
+    margin: 0.8rem 1rem 0;
+}
+
+.employed__date {
+    margin: 0.8rem 1rem 0;
+}
+
+.job__review {
+    color: var(--color-light);
+    font-weight: 200;
+    display: black;
+    width: 80%;
+    margin: 0.8rem auto 0;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: var(--color-primary);
+}
+
+/* ========================= MEDIA QUERIES (MEDIUM DEVICES) ========================== */
+@media screen and (max-width: 1024px) {
+    .container.work_experience__container {
+        width: 60%;
+    }
+
+}
+
+/* ========================= MEDIA QUERIES (SMALL DEVICES) ========================== */
+@media screen and (max-width: 600px) {
+    .container.work_experience__container {
+        width: var(--container-width-sm);
+    }
+
+    .job__review {
+        width: var(--container-width-sm);
+    }
+}

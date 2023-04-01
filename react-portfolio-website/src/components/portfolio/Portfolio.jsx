@@ -1,7 +1,7 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
+import IMG1 from '../../assets/Mars_Rover.png'
+import IMG2 from '../../assets/Eatchy.png'
 import IMG3 from '../../assets/portfolio3.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
@@ -11,44 +11,14 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Title 1",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels"
+    title: "Unity Mars Rover | Year 2 EYP",
+    link: "https://github.com/KelvinMang/Unity-Mars-Rover",
   },
   {
     id: 2,
     image: IMG2,
-    title: "Title 2",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels"
-  },
-  {
-    id: 3,
-    image: IMG3,
-    title: "Title 3",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels"
-  },
-  {
-    id: 4,
-    image: IMG4,
-    title: "Title 4",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels"
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: "Title 5",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels"
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: "Title 6",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels"
+    title: "Eatchy | City I&T Grand Challenge",
+    link: "https://youtu.be/8WJJUmceEbs",
   },
 
 ]
@@ -57,11 +27,11 @@ const Portfolio = () => {
   return (
     <section id = 'portfolio'>
       <h5> My Recent Work </h5>
-      <h2> Portfolio </h2>
+      <h2> Projects </h2>
 
       <div className='container portfolio__container'>
         {
-          data.map(({id,image,title,github,demo}) => {
+          data.map(({id,image,title,link}) => {
             return (
               <article key = {id} className='portfolio__items'>
               <div className='portfolio__item-image'>
@@ -71,8 +41,7 @@ const Portfolio = () => {
               <h3> {title} </h3>
               <div className='portfolio__item-cta'>
               {/* Add your own github project link and live demo links here */}
-              <a href={github} className='btn' target='_blank' >Github</a>
-              <a href={demo} className='btn btn-primary' target='_blank' >Live Demo</a>
+              <a href={link} className='btn' target='_blank' > Click Here </a>
               </div>
     
             </article>
