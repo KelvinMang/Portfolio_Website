@@ -1,4 +1,4 @@
-# [Your Name]'s Portfolio Website
+# Kelvin Mang's Portfolio Website
 
 This is a personal portfolio website built using React. It showcases my skills, work experience, and projects. The website includes a header, about me, skills, work experience, projects, and contact me sections. Visitors can send messages to me using the contact form, and the website features hover effects for better user experience.
 
