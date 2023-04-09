@@ -2,7 +2,11 @@
 
 This is a personal portfolio website built using React. It showcases my skills, work experience, and projects. The website includes a header, about me, skills, work experience, projects, and contact me sections. Visitors can send messages to me using the contact form, and the website features hover effects for better user experience.
 
-![Portfolio Website Screenshot](./portfolio-screenshot.png)
+## Preview
+<img width="1168" alt="Screenshot 2023-04-09 at 7 48 47 PM" src="https://user-images.githubusercontent.com/42444869/230791119-eb664e06-2280-412b-882f-14ffb2bb2e66.png">
+<img width="1189" alt="Screenshot 2023-04-09 at 7 49 05 PM" src="https://user-images.githubusercontent.com/42444869/230791131-43d071f9-9ad6-4b45-87f5-092475fc9ebf.png">
+
+For a full demonstration, please visit [kelvinmang.com](https://kelvinmang.com/).
 
 ## Table of Contents
 
