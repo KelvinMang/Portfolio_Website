@@ -5,7 +5,6 @@ import IMG2 from '../../assets/Eatchy.png'
 import IMG3 from '../../assets/Music Synthesiser.png'
 import IMG4 from '../../assets/PlantPal.png'
 import IMG5 from '../../assets/Circuit_Simulator.png'
-import IMG6 from '../../assets/portfolio6.jpg'
 
 const data = [
   {
