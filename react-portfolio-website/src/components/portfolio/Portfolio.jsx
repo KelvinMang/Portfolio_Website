@@ -2,9 +2,9 @@ import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/Mars_Rover.png'
 import IMG2 from '../../assets/Eatchy.png'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
+import IMG3 from '../../assets/Music Synthesiser.png'
+import IMG4 from '../../assets/PlantPal.png'
+import IMG5 from '../../assets/Circuit_Simulator.png'
 import IMG6 from '../../assets/portfolio6.jpg'
 
 const data = [
@@ -20,6 +20,24 @@ const data = [
     title: "Eatchy | City I&T Grand Challenge",
     link: "https://youtu.be/8WJJUmceEbs",
   },
+  {
+    id: 3,
+    image: IMG3,
+    title: "Music Synthesiser | Embedded System",
+    link: "https://github.com/KelvinMang/Synth_Starter"
+  }, 
+  {
+    id: 4,
+    image: IMG4,
+    title: "PlantPal | Embedded System",
+    link: 'https://github.com/KelvinMang/PlantPal',
+  },
+  {
+    id: 5,
+    image: IMG5,
+    title: "Circuit Simulator | Year 1 EYP",
+    link: "https://github.com/KelvinMang/Circuit-Simulator"
+  }
 
 ]
 

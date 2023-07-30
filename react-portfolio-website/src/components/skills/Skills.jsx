@@ -71,7 +71,7 @@ const Experience = () => {
             <HiBadgeCheck className='skills__details-icon'/>
             <div>
               <h5> Budgeting </h5>
-              <small className='text-light'> Basic </small>
+              <small className='text-light'> Intermediate </small>
             </div>
           </article>
           <article className='skills__details'>
@@ -85,7 +85,7 @@ const Experience = () => {
             <HiBadgeCheck className='skills__details-icon'/>
             <div>
               <h5> Data Analysis </h5>
-              <small className='text-light'> Intermediate </small>
+              <small className='text-light'> Experienced </small>
             </div>
           </article>
         </div>
