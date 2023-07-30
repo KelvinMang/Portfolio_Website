@@ -54,7 +54,7 @@ const Work_experience = () => {
             return (
               <SwiperSlide key={index} className='work_experience'>
               <div className='company_logo'> 
-                <img src = {avatar}> ''</img>
+                <img src = {avatar}></img>
               </div>
               <h5 className='company__name'> {name} </h5>
               <div className = 'job__details'>
