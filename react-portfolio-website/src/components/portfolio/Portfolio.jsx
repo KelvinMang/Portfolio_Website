@@ -58,7 +58,7 @@ const Portfolio = () => {
               <h3> {title} </h3>
               <div className='portfolio__item-cta'>
               {/* Add your own github project link and live demo links here */}
-              <a href={link} className='btn' target='_blank' > Click Here </a>
+              <a href={link} className='btn' target='_blank' > More Details </a>
               </div>
     
             </article>
