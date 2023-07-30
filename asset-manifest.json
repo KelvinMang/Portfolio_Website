@@ -1,22 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.ca916c88.css",
-    "main.js": "/static/js/main.e7650937.js",
+    "main.js": "/static/js/main.97ab84b1.js",
     "static/media/Kelvin-about.png": "/static/media/Kelvin-about.73da75f4a64e0c7c895c.png",
     "static/media/Mars_Rover.png": "/static/media/Mars_Rover.58843ebfdcbf7c4844c1.png",
     "static/media/Eatchy.png": "/static/media/Eatchy.ad052579e9df72b1fa81.png",
     "static/media/Kelvin_me.png": "/static/media/Kelvin_me.cc085bb54799283e64c7.png",
-    "static/media/portfolio5.png": "/static/media/portfolio5.a82ae9a163c1ac5e3a07.png",
+    "static/media/Music Synthesiser.png": "/static/media/Music Synthesiser.64f62b4c3f374fb7326a.png",
     "static/media/Hao_Jian_Mang_Resume.pdf": "/static/media/Hao_Jian_Mang_Resume.291b84c3c947fc68ca2b.pdf",
-    "static/media/portfolio6.jpg": "/static/media/portfolio6.72d1107e313049cf15a7.jpg",
-    "static/media/portfolio3.jpg": "/static/media/portfolio3.cbab42559fe73e73906f.jpg",
-    "static/media/portfolio4.jpg": "/static/media/portfolio4.6bf60cbb8fe5f7d7af5d.jpg",
+    "static/media/Circuit_Simulator.png": "/static/media/Circuit_Simulator.5907633f845829c6bb44.png",
+    "static/media/PlantPal.png": "/static/media/PlantPal.7ef0ab59ad03f9a29880.png",
     "index.html": "/index.html",
     "main.ca916c88.css.map": "/static/css/main.ca916c88.css.map",
-    "main.e7650937.js.map": "/static/js/main.e7650937.js.map"
+    "main.97ab84b1.js.map": "/static/js/main.97ab84b1.js.map"
   },
   "entrypoints": [
     "static/css/main.ca916c88.css",
-    "static/js/main.e7650937.js"
+    "static/js/main.97ab84b1.js"
   ]
 }
