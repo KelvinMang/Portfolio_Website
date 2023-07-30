@@ -1,10 +1,10 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import './work_experience.css'
 import Amazon from "../../assets/Amazon_logo.png"
 import AskLora from "../../assets/AskLora_logo.png"
 import McKinsey from "../../assets/McKinsey_logo.png"
 
-import {Pagination, Scrollbar, Navigation} from 'swiper';
+import {Pagination, Navigation} from 'swiper';
 
 import { Swiper, SwiperSlide} from 'swiper/react';
 
@@ -54,7 +54,7 @@ const Work_experience = () => {
             return (
               <SwiperSlide key={index} className='work_experience'>
               <div className='company_logo'> 
-                <img src = {avatar}></img>
+                <img src = {avatar}> ''</img>
               </div>
               <h5 className='company__name'> {name} </h5>
               <div className = 'job__details'>
