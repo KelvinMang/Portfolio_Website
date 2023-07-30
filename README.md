@@ -54,6 +54,17 @@ The website should now be running on http://localhost:3000.
 
 Use this portfolio website to showcase your skills, work experience, and projects. Customize the content, layout, and styling to fit your needs.
 
+## Build and Deploy Website
+
+1. Build 
+```sh
+npm run build
+```
+2. Deploy
+```sh
+npm run deploy
+```
+
 ## Contributing
 
 Contributions are welcome! Here's how you can contribute:
