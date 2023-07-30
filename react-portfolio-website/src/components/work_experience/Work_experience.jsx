@@ -31,7 +31,7 @@ const Work_experience = () => {
   return (
     <section id ='work_experience'> 
       <h5> My previous work experience</h5>
-      <h2> Work experience </h2>
+      <h2> Work Experience </h2>
 
       <Swiper className='container work_experience__container'
         pagination={{clickable: true}}

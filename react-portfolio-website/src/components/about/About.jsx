@@ -4,7 +4,7 @@ import KELVIN from '../../assets/Kelvin-about.png'
 import {FiAward} from 'react-icons/fi'
 import {FaUsers} from 'react-icons/fa'
 import {VscRootFolder} from 'react-icons/vsc'
-import realme from '../../assets/real_me.jpeg'
+
 const About = () => {
   return (
     <section id = 'about'>
