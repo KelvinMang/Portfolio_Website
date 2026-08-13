@@ -1,83 +1,47 @@
-# Kelvin Mang's Portfolio Website
+# Kelvin Mang — Portfolio
 
-This is a personal portfolio website built using React. It showcases my skills, work experience, and projects. The website includes a header, about me, skills, work experience, projects, and contact me sections. Visitors can send messages to me using the contact form, and the website features hover effects for better user experience.
+Personal site for [Kelvin Mang](https://kelvinmang.com): entrepreneur and educator. Managing Director & Partner at [The Achievers](https://achievershk.net/chi/) and Co-Founder of [HiBro AI](https://hibro.ai/).
 
-## Preview
-<img width="1168" alt="Screenshot 2023-04-09 at 7 48 47 PM" src="https://user-images.githubusercontent.com/42444869/230791119-eb664e06-2280-412b-882f-14ffb2bb2e66.png">
-<img width="1189" alt="Screenshot 2023-04-09 at 7 49 05 PM" src="https://user-images.githubusercontent.com/42444869/230791131-43d071f9-9ad6-4b45-87f5-092475fc9ebf.png">
+**Live site:** [kelvinmang.com](https://kelvinmang.com)
 
-For a full demonstration, please visit [kelvinmang.com](https://kelvinmang.com/).
+The site is hosted with **GitHub Pages** from the `gh-pages` branch of this repository. Source code lives on `main`.
 
-## Table of Contents
+## Stack
 
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Contact](#contact)
+- React (Create React App)
+- Custom domain via `react-portfolio-website/public/CNAME` → `kelvinmang.com`
 
-## Features
+## Local development
 
-- Responsive design that works on all devices
-- Hover effects for better user experience
-- Contact form for sending messages
-- Showcases skills, work experience, and projects
-
-## Getting Started
-
-To get a local copy up and running, follow these steps.
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/en/)
-- [npm](https://www.npmjs.com/)
-
-### Installation
-
-1. Clone the repository
 ```sh
-git clone https://github.com/[your-github-username]/portfolio-website.git
-```
-2. Install NPM packages
-```sh
+git clone https://github.com/KelvinMang/Portfolio_Website.git
+cd Portfolio_Website/react-portfolio-website
 npm install
-```
-3. Start the development server
-```sh
 npm start
 ```
-The website should now be running on http://localhost:3000.
 
-## Usage
+The app runs at [http://localhost:3000](http://localhost:3000).
 
-Use this portfolio website to showcase your skills, work experience, and projects. Customize the content, layout, and styling to fit your needs.
+## Build and deploy (GitHub Pages)
 
-## Build and Deploy Website
+GitHub Pages is set to serve the **`gh-pages`** branch (not `main`). From the app folder:
 
-1. Build 
 ```sh
-npm run build
-```
-2. Deploy
-```sh
+cd react-portfolio-website
 npm run deploy
 ```
 
-## Contributing
+That script builds the production app, then publishes the `build` folder to `gh-pages`. After a minute or two, [kelvinmang.com](https://kelvinmang.com) should show the update.
 
-Contributions are welcome! Here's how you can contribute:
+To build without publishing:
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a pull request
+```sh
+cd react-portfolio-website
+npm run build
+```
 
 ## Contact
 
-If you have any questions or suggestions, feel free to reach out to me:
-
-- Kelvin Mang - kelvinmang888@gmail.com
-- GitHub: https://github.com/KelvinMang
+- Email: [kelvin.mang@achievershk.com](mailto:kelvin.mang@achievershk.com)
+- LinkedIn: [linkedin.com/in/kelvinmang](https://www.linkedin.com/in/kelvinmang/)
+- GitHub: [github.com/KelvinMang](https://github.com/KelvinMang)
