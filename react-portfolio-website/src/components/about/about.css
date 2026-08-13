@@ -47,6 +47,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.45rem;
+    margin-top: 0.35rem;
 }
 
 .about__chips li {

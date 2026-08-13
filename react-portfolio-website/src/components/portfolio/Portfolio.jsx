@@ -39,10 +39,10 @@ const Portfolio = () => {
               learning again.
             </p>
             <p>
-              In the past few years I have tutored <strong>200+ students</strong> in
-              IGCSE and A-Level Maths and Physics, and worked with <strong>300+ students</strong> on
-              personal statements and interview preparation — including the UK G5,
-              Cambridge, Imperial College London, and UCL.
+              Over the past few years I have helped <strong>200+ students</strong> with
+              IGCSE and A-Level Physics and Maths, and <strong>300+ students</strong> with
+              interview prep and university personal statements for UK G5 and
+              Hong Kong universities.
             </p>
             <p>
               If you want tutoring or admissions, go through The Achievers.

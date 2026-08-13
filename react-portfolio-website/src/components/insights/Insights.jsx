@@ -5,7 +5,7 @@ const pillars = [
   {
     pillar: 'Education',
     title: 'Every student struggles for a different reason',
-    text: 'Find the root cause first. Then build the plan. More hours and more worksheets are not a method. Grades are a snapshot, not a ceiling — and everyone deserves a chance, even if they have struggled academically.'
+    text: 'Find the root cause first. Then build the plan. More hours and more worksheets are not a method — they are what people do when they have not looked closely enough.'
   },
   {
     pillar: 'Entrepreneurship',
