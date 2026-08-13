@@ -1,21 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.ca916c88.css",
-    "main.js": "/static/js/main.97ab84b1.js",
-    "static/media/Kelvin-about.png": "/static/media/Kelvin-about.73da75f4a64e0c7c895c.png",
-    "static/media/Mars_Rover.png": "/static/media/Mars_Rover.58843ebfdcbf7c4844c1.png",
-    "static/media/Eatchy.png": "/static/media/Eatchy.ad052579e9df72b1fa81.png",
-    "static/media/Kelvin_me.png": "/static/media/Kelvin_me.cc085bb54799283e64c7.png",
-    "static/media/Music Synthesiser.png": "/static/media/Music Synthesiser.64f62b4c3f374fb7326a.png",
-    "static/media/Hao_Jian_Mang_Resume.pdf": "/static/media/Hao_Jian_Mang_Resume.291b84c3c947fc68ca2b.pdf",
-    "static/media/Circuit_Simulator.png": "/static/media/Circuit_Simulator.5907633f845829c6bb44.png",
-    "static/media/PlantPal.png": "/static/media/PlantPal.7ef0ab59ad03f9a29880.png",
+    "main.css": "/static/css/main.dd1b2f41.css",
+    "main.js": "/static/js/main.8d1f74e3.js",
+    "static/media/HiBro_logo.png": "/static/media/HiBro_logo.487a1894a3836ad68323.png",
+    "static/media/Kelvin_Mang_Professional.png": "/static/media/Kelvin_Mang_Professional.4b52c0bc100eafc3a266.png",
+    "static/media/Kelvin_Mang_Pro_2.png": "/static/media/Kelvin_Mang_Pro_2.4bdacb48cade812a7dee.png",
+    "static/media/Achievers_logo.png": "/static/media/Achievers_logo.01c85f2549f939f94c49.png",
     "index.html": "/index.html",
-    "main.ca916c88.css.map": "/static/css/main.ca916c88.css.map",
-    "main.97ab84b1.js.map": "/static/js/main.97ab84b1.js.map"
+    "main.dd1b2f41.css.map": "/static/css/main.dd1b2f41.css.map",
+    "main.8d1f74e3.js.map": "/static/js/main.8d1f74e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca916c88.css",
-    "static/js/main.97ab84b1.js"
+    "static/css/main.dd1b2f41.css",
+    "static/js/main.8d1f74e3.js"
   ]
 }
