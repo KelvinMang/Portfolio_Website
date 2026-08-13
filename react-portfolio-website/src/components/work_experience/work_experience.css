@@ -1,64 +1,75 @@
-.container.work_experience__container {
-    width: 65%;
-    padding-bottom: 4rem;
+.experience__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 52rem;
 }
 
-.company_logo {
-    width: 4rem;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: 0 auto 1rem;
-    border: 0.2rem solid var(--color-primary-variant);
-}
-
-.work_experience {
+.experience__item {
+    display: grid;
+    grid-template-columns: 3.3rem 1fr;
+    gap: 1.2rem;
     background: var(--color-bg-variant);
-    text-align: center;
-    padding: 3rem;
-    border-radius: 1rem;
-    user-select: none;
+    border: 1px solid var(--color-border);
+    border-radius: 1.2rem;
+    padding: 1.4rem 1.5rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
 }
 
-.job__details {
+.experience__item:hover {
+    border-color: var(--color-primary-variant);
+}
+
+.experience__mark {
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 0.85rem;
+    border: 1px solid var(--color-primary-variant);
+    color: var(--color-primary);
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    font-size: 0.8rem;
+    background: var(--color-primary-variant);
+}
+
+.experience__top {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
 
-.company__role {
-    margin: 0.8rem 1rem 0;
+.experience__top h3 {
+    font-size: 1.15rem;
 }
 
-.employed__date {
-    margin: 0.8rem 1rem 0;
+.experience__top span {
+    color: var(--color-primary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
-.job__review {
+.experience__body h4 {
     color: var(--color-light);
-    font-weight: 200;
-    display: black;
-    width: 80%;
-    margin: 0.8rem auto 0;
-}
-.swiper-pagination-clickable .swiper-pagination-bullet {
-    background: var(--color-primary);
+    font-weight: 400;
+    font-size: 0.92rem;
+    margin: 0.2rem 0 0.55rem;
 }
 
-/* ========================= MEDIA QUERIES (MEDIUM DEVICES) ========================== */
-@media screen and (max-width: 1024px) {
-    .container.work_experience__container {
-        width: 60%;
-    }
-
+.experience__body p {
+    color: var(--color-light);
+    font-size: 0.92rem;
 }
 
-/* ========================= MEDIA QUERIES (SMALL DEVICES) ========================== */
 @media screen and (max-width: 600px) {
-    .container.work_experience__container {
-        width: var(--container-width-sm);
-    }
-
-    .job__review {
-        width: var(--container-width-sm);
+    .experience__item {
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
+        padding: 1.2rem 1.1rem;
     }
 }

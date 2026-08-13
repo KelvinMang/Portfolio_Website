@@ -1,103 +1,58 @@
 import React from 'react'
 import './skills.css'
-import {HiBadgeCheck} from 'react-icons/hi'
-const Experience = () => {
+import { HiBadgeCheck } from 'react-icons/hi'
+
+const groups = [
+  {
+    title: 'Technology & AI',
+    items: [
+      { name: 'AI automation', level: 'HiBro AI' },
+      { name: 'Python', level: 'Experienced' },
+      { name: 'Machine learning', level: 'Experienced' },
+      { name: 'Product & systems', level: 'Builder' },
+      { name: 'Data analysis', level: 'Experienced' },
+      { name: 'React', level: 'Intermediate' }
+    ]
+  },
+  {
+    title: 'Education & Advisory',
+    items: [
+      { name: '1-on-1 advisory', level: 'Academic & career' },
+      { name: 'Learning plans', level: 'Personalised' },
+      { name: 'Career pathing', level: 'Students & grads' },
+      { name: 'Startup ops', level: 'Education & tech' },
+      { name: 'Teaching', level: 'Educator' },
+      { name: 'Mentorship', level: 'High-trust' }
+    ]
+  }
+]
+
+const Skills = () => {
   return (
-    <section id = 'skills'> 
-    <h5> What Skills I Have</h5>
-    <h2> Skills </h2>
+    <section id="skills">
+      <h5>How I work</h5>
+      <h2>Capabilities</h2>
 
-    <div className='container skills__container'>
-      <div className='skills__software'>
-        <h3> Software Development </h3>
-        <div className='skills__content'>
-          <article className='skills__details'>
-            <HiBadgeCheck className='skills__details-icon'/>
-            <div>
-              <h5> Python </h5>
-              <small className='text-light'> Experienced </small>
+      <div className="container skills__container">
+        {groups.map(({ title, items }) => (
+          <div key={title}>
+            <h3>{title}</h3>
+            <div className="skills__content">
+              {items.map(({ name, level }) => (
+                <article key={name} className="skills__details">
+                  <HiBadgeCheck className="skills__details-icon" />
+                  <div>
+                    <h5>{name}</h5>
+                    <small className="text-light">{level}</small>
+                  </div>
+                </article>
+              ))}
             </div>
-          </article>
-          <article className='skills__details'>
-            <HiBadgeCheck className='skills__details-icon'/>
-            <div>
-              <h5> Flutter </h5>
-              <small className='text-light'> Experienced </small>
-            </div>
-          </article>
-          <article className='skills__details'>
-            <HiBadgeCheck className='skills__details-icon'/>
-            <div>
-              <h5> C++ </h5>
-              <small className='text-light'> Intermediate </small>
-            </div>
-          </article>
-          <article className='skills__details'>
-            <HiBadgeCheck className='skills__details-icon'/>
-            <div>
-              <h5> React </h5>
-              <small className='text-light'> Intermediate </small>
-            </div>
-          </article>
-          <article className='skills__details'>
-            <HiBadgeCheck className='skills__details-icon'/>
-            <div>
-              <h5> Machine Learning </h5>
-              <small className='text-light'> Experienced </small>
-            </div>
-          </article>
-        </div>
+          </div>
+        ))}
       </div>
-      {/* END OF FRONTEND */}
-
-      <div className='skilskills'>
-      <h3> Financial Competencies </h3>
-        <div className='skills__content'>
-          <article className='skills__details'>
-            <HiBadgeCheck className='skills__details-icon'/>
-            <div>
-              <h5> Modeling </h5>
-              <small className='text-light'> Experienced </small>
-            </div>
-          </article>
-          <article className='skills__details'>
-            <HiBadgeCheck className='skills__details-icon'/>
-            <div>
-              <h5> Fin. Analysis </h5>
-              <small className='text-light'> Intermediate</small>
-            </div>
-          </article>
-          <article className='skills__details'>
-            <HiBadgeCheck className='skills__details-icon'/>
-            <div>
-              <h5> Budgeting </h5>
-              <small className='text-light'> Intermediate </small>
-            </div>
-          </article>
-          <article className='skills__details'>
-            <HiBadgeCheck className='skills__details-icon'/>
-            <div>
-              <h5> Inv. Analysis </h5>
-              <small className='text-light'> Intermediate </small>
-            </div>
-          </article>
-          <article className='skills__details'>
-            <HiBadgeCheck className='skills__details-icon'/>
-            <div>
-              <h5> Data Analysis </h5>
-              <small className='text-light'> Experienced </small>
-            </div>
-          </article>
-        </div>
-
-        
-      </div>
-
-    </div>
-    
-
     </section>
   )
 }
 
-export default Experience
+export default Skills

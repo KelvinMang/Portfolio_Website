@@ -1,26 +1,32 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import KELVIN from '../../assets/Kelvin_me.png'
+import KELVIN from '../../assets/Kelvin_Mang_Pro_2.png'
 import HeaderSocials from './HeaderSocials'
+
 const Header = () => {
   return (
-    <header>
+    <header id="home">
       <div className="container header__container">
-        <h5>
-          Hello I'm
-        </h5>
-        <h1> Kelvin Mang </h1>
-        <h5 className='text-light'> Penultimate year MEng EEE with Management student at Imperial College London</h5>
-        <CTA />
-        <HeaderSocials />
-
-        <div className='me'>
-           <img src = {KELVIN} alt='me' />
+        <div className="header__copy">
+          <p className="header__eyebrow">Entrepreneur &amp; Educator</p>
+          <h1>Kelvin Mang</h1>
+          <p className="header__lead">
+            Building education and AI ventures.
+          </p>
+          <p className="header__role">
+            Managing Director &amp; Partner at The Achievers · Co-Founder at HiBro AI
+          </p>
+          <p className="header__architecture">I build / I think / I advise</p>
+          <CTA />
+          <HeaderSocials />
         </div>
 
-        <a href='#contact' className='scroll__down'>Scroll Down</a>
-
+        <div className="header__portrait">
+          <div className="header__portrait-frame">
+            <img src={KELVIN} alt="Kelvin Mang, entrepreneur and educator" />
+          </div>
+        </div>
       </div>
     </header>
   )

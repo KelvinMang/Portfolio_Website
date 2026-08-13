@@ -1,80 +1,196 @@
-.container.contact__container {
-    width: 58%;
+#work .section__lede {
+    margin-bottom: 2.8rem;
+}
+
+.work__areas {
     display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem 2.75rem;
+    max-width: 62rem;
+    margin-bottom: 0;
+}
+
+.work__area {
+    border-top: 2px solid var(--color-border);
+    padding-top: 1.2rem;
+}
+
+.work__index {
+    color: var(--color-primary);
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+
+.work__area h3 {
+    font-size: 1.12rem;
+    letter-spacing: -0.025em;
+    line-height: 1.3;
+    margin-bottom: 0.7rem;
+}
+
+.work__area p {
+    color: var(--color-light);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 22rem;
+}
+
+.work__note {
+    max-width: 62rem;
+    margin: 2rem auto 0;
+    padding-top: 1.35rem;
+    border-top: 1px solid var(--color-border);
+    text-align: left;
+    color: var(--color-light);
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+.work__note a {
+    font-weight: 600;
+}
+
+.container.contact__container {
+    width: min(var(--container-width-lg), 62rem);
+    display: grid;
+    grid-template-columns: minmax(0, 16.5rem) minmax(0, 1fr);
+    gap: 2.5rem 3rem;
+    align-items: start;
+    margin-top: 2.75rem;
+    padding-top: 2.4rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.contact__kicker {
+    color: var(--color-primary);
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
 }
 
 .contact__options {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.15rem;
 }
 
 .contact__option {
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    
-}
-
-.contact__option p {
-    text-align: center;
-    font-size: 11px;
-}
-
-.contact__option:hover {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
     background: transparent;
-    border-color: var(--color-primary-variant);
+    padding: 0;
+    border: 0;
+    text-align: left;
+}
+
+.contact__option h3 {
+    font-size: 0.92rem;
+    margin-bottom: 0.15rem;
 }
 
 .contact__option-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    margin-top: 0.2rem;
+    color: var(--color-primary);
+    flex-shrink: 0;
 }
 
 .contact__option a {
-    margin-top: 0.7rem;
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    word-break: break-word;
 }
 
-/* ================== FORM =================== */
 form {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
-    padding-top: 6rem;
+    gap: 0.45rem;
 }
 
-input, textarea {
+form label {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--color-navy);
+    margin-top: 0.35rem;
+}
+
+form label:first-of-type {
+    margin-top: 0;
+}
+
+input,
+textarea {
     width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-primary-variant);
-    resize: none;
-    color: var(--color-white);
+    padding: 0.85rem 1rem;
+    border-radius: 0.7rem;
+    background: var(--color-bg-variant);
+    border: 1px solid var(--color-border);
+    resize: vertical;
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
 }
 
-/* ========================= MEDIA QUERIES (MEDIUM DEVICES) ========================== */
+input::placeholder,
+textarea::placeholder {
+    color: var(--color-muted);
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--color-primary);
+}
+
+form .btn {
+    margin-top: 0.85rem;
+}
+
 @media screen and (max-width: 1024px) {
-    .container.contact__container {
+    .work__areas {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.6rem;
     }
 
+    .work__area p {
+        max-width: 36rem;
+    }
 
+    .work__note {
+        margin-top: 1.6rem;
+    }
+
+    .container.contact__container {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+        width: var(--container-width-md);
+        margin-top: 2.2rem;
+        padding-top: 2rem;
+    }
+
+    .contact__options {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem 2rem;
+    }
 }
 
-/* ========================= MEDIA QUERIES (SMALL DEVICES) ========================== */
 @media screen and (max-width: 600px) {
     .container.contact__container {
         width: var(--container-width-sm);
     }
 
-}
+    .contact__options {
+        flex-direction: column;
+        gap: 1.1rem;
+    }
 
+    form .btn {
+        width: 100%;
+    }
+}

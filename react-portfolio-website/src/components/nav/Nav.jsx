@@ -1,23 +1,97 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './nav.css'
-import {AiOutlineHome} from 'react-icons/ai'
-import {AiOutlineUser} from 'react-icons/ai'
-import {AiOutlineBook} from 'react-icons/ai'
-import {RiMessage2Line} from 'react-icons/ri'
-import {useState} from 'react'
-import {HiOutlineFolder} from 'react-icons/hi'
-import {MdOutlineDesignServices} from 'react-icons/md'
+
+const links = [
+  { href: '#home', label: 'Home' },
+  { href: '#ventures', label: 'Ventures' },
+  { href: '#about', label: 'About' },
+  { href: '#insights', label: 'Insights' }
+]
+
+const sectionIds = ['home', 'ventures', 'about', 'insights', 'work']
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#')
+  const [open, setOpen] = useState(false)
+  const [active, setActive] = useState('#home')
+
+  const go = (href) => {
+    setActive(href)
+    setOpen(false)
+  }
+
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'Escape') setOpen(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [])
+
+  useEffect(() => {
+    const elements = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter(Boolean)
+
+    if (!elements.length) return undefined
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)
+
+        if (visible[0]) {
+          setActive(`#${visible[0].target.id}`)
+        }
+      },
+      { rootMargin: '-28% 0px -55% 0px', threshold: [0.15, 0.35, 0.6] }
+    )
+
+    elements.forEach((el) => observer.observe(el))
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <nav>
-      <a href='#' onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active': ''}> <AiOutlineHome /> </a>
-      <a href='#about' onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active': ''} > <AiOutlineUser /> </a>
-      <a href='#skills' onClick={() => setActiveNav('#skills')} className={activeNav === '#skills' ? 'active': ''} > <AiOutlineBook /> </a>
-      <a href='#work_experience' onClick={() => setActiveNav('#work_experience')} className={activeNav === '#work_experience' ? 'active': ''} > <MdOutlineDesignServices /> </a>
-      <a href='#portfolio' onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active': ''} > <HiOutlineFolder /> </a>
-      <a href='#contact' onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active': ''} > <RiMessage2Line /> </a>
+    <nav className={`topnav${open ? ' topnav--open' : ''}`} aria-label="Primary">
+      <div className="container topnav__inner">
+        <a href="#home" className="topnav__brand" onClick={() => go('#home')}>
+          Kelvin Mang
+        </a>
+
+        <button
+          className="topnav__toggle"
+          type="button"
+          aria-label={open ? 'Close menu' : 'Open menu'}
+          aria-expanded={open}
+          aria-controls="primary-navigation"
+          onClick={() => setOpen((v) => !v)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+
+        <div id="primary-navigation" className="topnav__links">
+          {links.map(({ href, label }) => (
+            <a
+              key={href}
+              href={href}
+              className={active === href ? 'active' : ''}
+              aria-current={active === href ? 'page' : undefined}
+              onClick={() => go(href)}
+            >
+              {label}
+            </a>
+          ))}
+          <a
+            href="#work"
+            className={`btn btn-primary topnav__cta${active === '#work' ? ' active' : ''}`}
+            onClick={() => go('#work')}
+          >
+            Work With Me
+          </a>
+        </div>
+      </div>
     </nav>
   )
 }

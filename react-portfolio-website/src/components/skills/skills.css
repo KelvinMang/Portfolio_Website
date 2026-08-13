@@ -1,75 +1,77 @@
 .skills__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 1.4rem;
 }
 
 .skills__container > div {
     background: var(--color-bg-variant);
-    padding: 2.4rem 3rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
+    padding: 2.1rem 2.2rem;
+    border-radius: 1.4rem;
+    border: 1px solid var(--color-border);
     transition: var(--transition);
+    box-shadow: var(--shadow);
 }
 
 .skills__container > div:hover {
-    background: transparent;
     border-color: var(--color-primary-variant);
-    cursor: default;
 }
 
 .skills__container > div h3 {
     text-align: center;
-    margin-bottom: 2rem ;
-    color: var(--color-primary);
+    margin-bottom: 1.7rem;
+    color: var(--color-navy);
+    font-size: 1.25rem;
 }
 
 .skills__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+    row-gap: 1.5rem;
+    column-gap: 1rem;
 }
 
 .skills__details {
     display: flex;
-    align-items: center;
-    gap: 1.5rem;
+    align-items: flex-start;
+    gap: 0.85rem;
+}
+
+.skills__details h5 {
+    font-size: 0.95rem;
 }
 
 .skills__details-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px; 
     color: var(--color-primary);
+    font-size: 1.15rem;
+    margin-top: 0.15rem;
+    flex-shrink: 0;
 }
 
-/* ========================= MEDIA QUERIES (MEDIUM DEVICES) ========================== */
 @media screen and (max-width: 1024px) {
     .skills__container {
         grid-template-columns: 1fr;
     }
+
     .skills__container > div {
-        width: 80%;
+        width: 90%;
         padding: 2rem;
         margin: 0 auto;
     }
-
-    .skills__content {
-        padding: 1rem;
-    }
-
 }
 
-/* ========================= MEDIA QUERIES (SMALL DEVICES) ========================== */
 @media screen and (max-width: 600px) {
-    .skills__container{
+    .skills__container {
         gap: 1rem;
     }
 
     .skills__container > div {
         width: 100%;
-        padding: 2rem 1rem;
+        padding: 1.6rem 1.2rem;
     }
 
+    .skills__content {
+        grid-template-columns: 1fr;
+        row-gap: 1.1rem;
+    }
 }

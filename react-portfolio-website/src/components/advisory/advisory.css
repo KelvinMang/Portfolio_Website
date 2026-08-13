@@ -1,0 +1,116 @@
+.advisory__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem 1.75rem;
+}
+
+.advisory__card {
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--color-border);
+    border-radius: 0;
+    padding: 1.25rem 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.advisory__index {
+    color: var(--color-primary);
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+
+.advisory__card h3 {
+    font-size: 1.12rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.55rem;
+    line-height: 1.35;
+}
+
+.advisory__card > p {
+    color: var(--color-light);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: 1rem;
+}
+
+.advisory__card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+    margin-bottom: 1.15rem;
+}
+
+.advisory__card li {
+    color: var(--color-navy);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    padding-left: 0.85rem;
+    position: relative;
+}
+
+.advisory__card li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+    width: 0.28rem;
+    height: 0.28rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+}
+
+.advisory__card > a {
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+.advisory__secondary {
+    margin-top: 2.4rem;
+    max-width: var(--prose);
+    border-top: 1px solid var(--color-border);
+    padding: 1.5rem 0 0;
+}
+
+.advisory__secondary-mark {
+    color: var(--color-muted);
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.advisory__secondary h3 {
+    font-size: 1.18rem;
+    margin-bottom: 0.65rem;
+}
+
+.advisory__secondary p {
+    color: var(--color-light);
+    font-size: 0.96rem;
+    line-height: 1.75;
+    max-width: 38rem;
+}
+
+.advisory__secondary-note {
+    margin-top: 0.7rem;
+}
+
+.advisory__secondary-note a {
+    font-weight: 600;
+}
+
+.advisory__secondary .btn {
+    margin-top: 1.15rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .advisory__grid {
+        grid-template-columns: 1fr;
+        gap: 1.6rem;
+    }
+}
