@@ -7,7 +7,7 @@ const chapters = [
     role: 'Educator',
     title: 'I still teach, because every student deserves a chance.',
     body: [
-      'I still teach Maths and Physics, mostly to international-school students taking IGCSE and A-Level. I care about where a student gets stuck, and why. Every student struggles for a different reason. Over the past few years I have helped 200+ students with IGCSE and A-Level Physics and Maths, and 300+ with interview prep and university personal statements for UK G5 and Hong Kong universities.',
+      'I still teach Maths and Physics, mostly to international-school students taking IGCSE and A-Level. I care about where a student gets stuck, and why. Every student struggles for a different reason.',
       'I used to struggle at school too. In secondary school my results were poor. I would revise, then forget almost everything. A-Levels changed that. I learnt that different people fit different exam systems — and that how you break the work down matters as much as how many hours you sit at the desk.',
       'I went to St. Paul’s College. I took International A-Levels and got 4A* in Physics, Chemistry, Maths and Further Maths. Maths was 100%. Then I went to Imperial College London and graduated with First Class Honours in Electrical and Electronic Engineering with Management. I was a Hong Kong Scholar, made the Dean’s List, and won the Head of Department Prize as the top student in the management stream.'
     ]
