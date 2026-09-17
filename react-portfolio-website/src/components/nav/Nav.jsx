@@ -3,12 +3,13 @@ import './nav.css'
 
 const links = [
   { href: '#home', label: 'Home' },
-  { href: '#ventures', label: 'Ventures' },
   { href: '#about', label: 'About' },
+  { href: '#ventures', label: 'Ventures' },
+  { href: '#projects', label: 'Projects' },
   { href: '#insights', label: 'Insights' }
 ]
 
-const sectionIds = ['home', 'ventures', 'about', 'insights', 'work']
+const sectionIds = ['home', 'about', 'ventures', 'projects', 'insights', 'contact']
 
 const Nav = () => {
   const [open, setOpen] = useState(false)
@@ -84,11 +85,11 @@ const Nav = () => {
             </a>
           ))}
           <a
-            href="#work"
-            className={`btn btn-primary topnav__cta${active === '#work' ? ' active' : ''}`}
-            onClick={() => go('#work')}
+            href="#contact"
+            className={`btn btn-primary topnav__cta${active === '#contact' ? ' active' : ''}`}
+            onClick={() => go('#contact')}
           >
-            Work With Me
+            Contact
           </a>
         </div>
       </div>

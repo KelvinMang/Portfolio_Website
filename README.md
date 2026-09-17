@@ -1,6 +1,6 @@
 # Kelvin Mang — Portfolio
 
-Personal site for [Kelvin Mang](https://kelvinmang.com): entrepreneur and educator. Managing Director & Partner at [The Achievers](https://achievershk.net/chi/) and Co-Founder of [HiBro AI](https://hibro.ai/).
+Personal site for [Kelvin Mang](https://kelvinmang.com): entrepreneur, technology builder and operator. Managing Director at [The Achievers](https://achievershk.net/chi/) and Co-Founder of [HiBro AI](https://hibro.ai/).
 
 **Live site:** [kelvinmang.com](https://kelvinmang.com)
 
@@ -42,6 +42,6 @@ npm run build
 
 ## Contact
 
-- Email: [kelvin.mang@achievershk.com](mailto:kelvin.mang@achievershk.com)
+- Email: [kelvin@kelvinmang.com](mailto:kelvin@kelvinmang.com)
 - LinkedIn: [linkedin.com/in/kelvinmang](https://www.linkedin.com/in/kelvinmang/)
 - GitHub: [github.com/KelvinMang](https://github.com/KelvinMang)

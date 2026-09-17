@@ -7,19 +7,16 @@ import { EMAIL, LINKEDIN, ACHIEVERS_URL, HIBRO_URL } from '../../data/site'
 
 const areas = [
   {
-    index: '01',
-    title: 'Business & startups',
-    text: 'How the company actually runs and grows — operations, people, and the messy decisions in between.'
+    title: 'AI strategy & implementation',
+    text: 'Where automation actually helps, and how to put it into the workflow.'
   },
   {
-    index: '02',
-    title: 'AI & automation',
-    text: 'Where automation saves time in enquiry, follow-up and workflow. I build this at HiBro. I can help you see where it fits.'
+    title: 'Business operations',
+    text: 'Processes, internal systems and the unglamorous work of making a company run.'
   },
   {
-    index: '03',
-    title: 'Education businesses',
-    text: 'I run one. Operations, growth, and keeping quality consistent. Tutoring itself stays at The Achievers.'
+    title: 'Technology & education systems',
+    text: 'Software, operations and education technology — without turning every enquiry into a tutoring request.'
   }
 ]
 
@@ -31,7 +28,7 @@ const Contact = () => {
 
     const data = new FormData(form.current)
     const composed = [
-      `Business: ${data.get('business') || ''}`,
+      `Organisation: ${data.get('business') || ''}`,
       `Challenge: ${data.get('challenge') || ''}`,
       `Desired outcome: ${data.get('outcome') || ''}`
     ].join('\n\n')
@@ -54,33 +51,28 @@ const Contact = () => {
   }
 
   return (
-    <section id="work">
-      <p className="section__eyebrow">I advise</p>
-      <h2>Work With Me</h2>
+    <section id="contact">
+      <p className="section__eyebrow">Contact</p>
+      <h2>Advisory &amp; collaboration</h2>
       <p className="section__lede">
-        If you are looking for advice on a business, education company, or
-        practical AI — feel free to reach out. I take on a limited number of
-        conversations.
+        I occasionally work with founders and organisations on technology,
+        AI implementation, automation, business systems and operations.
+        For tutoring or admissions, go through
+        {' '}
+        <a href={ACHIEVERS_URL} target="_blank" rel="noreferrer">The Achievers</a>.
+        For the product, visit
+        {' '}
+        <a href={HIBRO_URL} target="_blank" rel="noreferrer">HiBro AI</a>.
       </p>
 
       <div className="container work__areas">
-        {areas.map(({ index, title, text }) => (
+        {areas.map(({ title, text }) => (
           <article key={title} className="work__area">
-            <p className="work__index">{index}</p>
             <h3>{title}</h3>
             <p>{text}</p>
           </article>
         ))}
       </div>
-
-      <p className="container work__note">
-        For tutoring or admissions, go through
-        {' '}
-        <a href={ACHIEVERS_URL} target="_blank" rel="noreferrer">The Achievers</a>.
-        For the AI product, visit
-        {' '}
-        <a href={HIBRO_URL} target="_blank" rel="noreferrer">HiBro AI</a>.
-      </p>
 
       <div className="container contact__container">
         <div className="contact__options">
@@ -101,20 +93,20 @@ const Contact = () => {
           </article>
         </div>
 
-        <form ref={form} onSubmit={sendEmail} aria-label="Enquiry">
+        <form ref={form} onSubmit={sendEmail} aria-label="Collaboration enquiry">
           <label htmlFor="contact-name">Your name</label>
           <input id="contact-name" type="text" name="name" autoComplete="name" required />
 
           <label htmlFor="contact-email">Email</label>
           <input id="contact-email" type="email" name="email" autoComplete="email" required />
 
-          <label htmlFor="contact-business">Your business</label>
+          <label htmlFor="contact-business">Organisation</label>
           <input id="contact-business" type="text" name="business" required />
 
-          <label htmlFor="contact-challenge">What you need help with</label>
+          <label htmlFor="contact-challenge">What you are working on</label>
           <textarea id="contact-challenge" name="challenge" rows="4" required />
 
-          <label htmlFor="contact-outcome">What good looks like</label>
+          <label htmlFor="contact-outcome">What would help</label>
           <textarea id="contact-outcome" name="outcome" rows="3" required />
 
           <input type="hidden" name="message" />

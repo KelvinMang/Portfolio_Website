@@ -3,9 +3,9 @@ import React from 'react'
 const CTA = () => {
   return (
     <div className="cta">
-      <a href="#ventures" className="btn btn-primary">My Ventures</a>
-      <a href="#about" className="btn">About Me</a>
-      <a href="#work" className="btn">Work With Me</a>
+      <a href="#ventures" className="btn btn-primary">Ventures</a>
+      <a href="#projects" className="btn">Projects</a>
+      <a href="#contact" className="btn">Contact</a>
     </div>
   )
 }

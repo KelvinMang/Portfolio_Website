@@ -11,17 +11,17 @@
 }
 
 :root {
-    --color-bg: #f4f1ea;
+    --color-bg: #f3f2ee;
     --color-bg-variant: #ffffff;
-    --color-primary: #0e8a86;
-    --color-primary-strong: #0b6f6c;
-    --color-primary-variant: rgba(14, 138, 134, 0.12);
-    --color-navy: #102033;
-    --color-text: #102033;
+    --color-primary: #0d7370;
+    --color-primary-strong: #0a5c5a;
+    --color-primary-variant: rgba(13, 115, 112, 0.1);
+    --color-navy: #0e1621;
+    --color-text: #0e1621;
     --color-white: #ffffff;
-    --color-light: #5c6b7a;
-    --color-muted: #8a97a5;
-    --color-border: #e6e1d6;
+    --color-light: #5a6570;
+    --color-muted: #8a93a0;
+    --color-border: #e2dfd6;
     --shadow: none;
 
     --transition: color 220ms ease, background-color 220ms ease, border-color 220ms ease;
@@ -29,11 +29,11 @@
     --container-width-lg: 88%;
     --container-width-md: 90%;
     --container-width-sm: 92%;
-    --container-max: 68rem;
-    --prose: 38rem;
+    --container-max: 70rem;
+    --prose: 40rem;
 
-    --radius: 0.9rem;
-    --section-space: 4.75rem;
+    --radius: 0.75rem;
+    --section-space: 5.2rem;
     --font-display: 'Outfit', sans-serif;
     --font-body: 'Outfit', sans-serif;
 }

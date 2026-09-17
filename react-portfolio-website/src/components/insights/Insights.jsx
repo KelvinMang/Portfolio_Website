@@ -1,42 +1,52 @@
 import React from 'react'
 import './insights.css'
 
-const pillars = [
-  {
-    pillar: 'Education',
-    title: 'Every student struggles for a different reason',
-    text: 'Find the root cause first. Then build the plan. More hours and more worksheets are not a method — they are what people do when they have not looked closely enough.'
-  },
-  {
-    pillar: 'Entrepreneurship',
-    title: 'I like building with people I trust',
-    text: 'Achievers, HiBro, and the work in between were never a solo hero story. I like sitting down with people I trust, seeing a real problem, and shipping something — even when it is messy, especially when it is messy.'
-  },
+const notes = [
   {
     pillar: 'AI',
-    title: 'AI should take the repetitive layer',
-    text: 'Use it where it actually helps — enquiry, follow-up, WhatsApp, internal workflow — so people can do the human work. Practical automation, not a demo that looks good in a meeting.'
+    title: 'Apply AI to the workflow, not the slide',
+    text: 'Use it where a team already loses time — enquiry, follow-up, knowledge, internal process. If it does not change the work, it is decoration.'
+  },
+  {
+    pillar: 'Automation',
+    title: 'Most teams are not short on effort',
+    text: 'They are short on a system that can reply, follow up and remember. That is true in a clinic waiting on WhatsApp and in a company drowning in email.'
   },
   {
     pillar: 'Operations',
-    title: 'Most teams are not short on effort',
-    text: 'They are short on a system that can reply, follow up, and remember. That is true in a tutorial centre and in a clinic waiting on WhatsApp. The bottleneck is usually how the work is organised, not how hard people try.'
+    title: 'Growing a company is a systems problem',
+    text: 'Quality slips when knowledge sits in one person’s head. The work is to make the useful parts repeatable without making the organisation rigid.'
+  },
+  {
+    pillar: 'Entrepreneurship',
+    title: 'Build with people you trust',
+    text: 'Companies and products are rarely a solo story. I like sitting down with people I trust, seeing a real mess, and shipping something cleaner.'
+  },
+  {
+    pillar: 'Product',
+    title: 'Internal tools count',
+    text: 'The software that helps a team see the work, assign it and close it is often more valuable than another public feature. I treat that as product work.'
+  },
+  {
+    pillar: 'Education technology',
+    title: 'Education businesses have the same operating problems',
+    text: 'Follow-up, scheduling, consistency, and how a team scales. Technology helps when it serves that, not when it replaces the conversation with a student.'
   }
 ]
 
 const Insights = () => {
   return (
     <section id="insights">
-      <p className="section__eyebrow">I think</p>
+      <p className="section__eyebrow">Thinking</p>
       <h2>Insights</h2>
       <p className="section__lede">
-        A few things I keep coming back to — from teaching, running a company,
-        and building products.
+        Notes across AI, automation, operations, product and building companies.
+        Not a blog with invented dates — a set of subjects I keep returning to.
       </p>
 
       <div className="container insights__grid">
-        {pillars.map(({ pillar, title, text }) => (
-          <article key={pillar} className="insights__card">
+        {notes.map(({ pillar, title, text }) => (
+          <article key={title} className="insights__card">
             <p className="insights__mark">{pillar}</p>
             <h3>{title}</h3>
             <p>{text}</p>
